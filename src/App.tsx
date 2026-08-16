@@ -4,6 +4,7 @@ import './App.css'
 import allItems from "./assets/data/acnh/all-items.json"
 import { useEffect, useState, type ChangeEventHandler } from 'react'
 import Fuse from 'fuse.js'
+import Leaf from "./assets/leaf.png"
 
 
 export type Item = {
@@ -75,7 +76,7 @@ function App() {
 
       <Stack gap={15} style={{ maxWidth: "1000px", width: '50vw' }}>
         <Flex align='flex-end' gap={10}>
-          <Image src='/favicon.png' h='50px' w='auto'/>
+          <Image src={Leaf} h='50px' w='auto'/>
           <Title>Kelly's Items</Title>
         </Flex>
         <Stack gap={5}>
